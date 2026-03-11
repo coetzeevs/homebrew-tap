@@ -3,7 +3,7 @@ cask "cerebro" do
   name "cerebro"
   desc "Local-first persistent memory system for AI agents"
   homepage "https://github.com/coetzeevs/cerebro"
-  version "1.0.1"
+  version "1.0.2"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,12 +14,16 @@ cask "cerebro" do
   on_macos do
     on_intel do
       url "https://github.com/coetzeevs/cerebro/releases/download/v#{version}/cerebro_#{version}_darwin_amd64.tar.gz"
-      sha256 "81d37b93d20e8cf0fd634cad5b56112beadd906f4bd5896948918f279420fb67"
+      sha256 "02fb299ce0da364153f109e1b217a6467335c681346d085f22f2708a8f7cd345"
     end
     on_arm do
       url "https://github.com/coetzeevs/cerebro/releases/download/v#{version}/cerebro_#{version}_darwin_arm64.tar.gz"
-      sha256 "0a5acf1ea76d245ef27383d9df5dca8a71f220c202fa3c3f82236c05398710df"
+      sha256 "7db5de0849e4ea65e41e28c380c86dcf2d12252d6c0050fb78f85e305415ca71"
     end
+  end
+
+  postflight do
+    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/cerebro"]
   end
 
   # No zap stanza required
