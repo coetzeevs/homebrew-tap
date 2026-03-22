@@ -14,11 +14,11 @@ cask "cerebro" do
   on_macos do
     on_intel do
       url "https://github.com/coetzeevs/cerebro/releases/download/v#{version}/cerebro_#{version}_darwin_amd64.tar.gz"
-      sha256 "44c9a04c9f83ee91bf9a8e19b96a689209a47abea9fab1ea604e05193ce5477d"
+      sha256 "994815bbafa47bd9848a196063f1e4fc31e12eaf23c8bbefc86a50d6190e8096"
     end
     on_arm do
       url "https://github.com/coetzeevs/cerebro/releases/download/v#{version}/cerebro_#{version}_darwin_arm64.tar.gz"
-      sha256 "3f570e7448071583830f424d922def1acde3132421cc4184f992c256553c3146"
+      sha256 "4d4bbe4c569b4367cfb8c092cfa30a91d77986510567a16b0a586debad6c81cc"
     end
   end
 
