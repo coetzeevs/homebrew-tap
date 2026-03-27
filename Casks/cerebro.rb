@@ -3,7 +3,7 @@ cask "cerebro" do
   name "cerebro"
   desc "Local-first persistent memory system for AI agents"
   homepage "https://github.com/coetzeevs/cerebro"
-  version "1.1.1"
+  version "1.2.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,11 +14,11 @@ cask "cerebro" do
   on_macos do
     on_intel do
       url "https://github.com/coetzeevs/cerebro/releases/download/v#{version}/cerebro_#{version}_darwin_amd64.tar.gz"
-      sha256 "994815bbafa47bd9848a196063f1e4fc31e12eaf23c8bbefc86a50d6190e8096"
+      sha256 "e1e6651a830509de280bd57c5e7307e1bd63bd4a8f794db2057c285f4c1454b0"
     end
     on_arm do
       url "https://github.com/coetzeevs/cerebro/releases/download/v#{version}/cerebro_#{version}_darwin_arm64.tar.gz"
-      sha256 "4d4bbe4c569b4367cfb8c092cfa30a91d77986510567a16b0a586debad6c81cc"
+      sha256 "4f3231eb340177120ba19024332255e40cc6a772f336630476e756a20ac3fff5"
     end
   end
 
